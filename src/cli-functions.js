@@ -12,10 +12,11 @@ module.exports = {
     var notesJSON = readNotesFile();
 
     if (notesJSON && notesJSON.length > 0 && notesJSON[notesJSON.length - 1].date == TODAY) {
-      console.log(chalk.bold.black.bgGreen(' ' + TODAY + ' '));
+      console.log(chalk.bold(' ' + TODAY + ' '));
       notesJSON[notesJSON.length - 1].notes.forEach(note => {
         console.log('  > ' + note);
       });
+      console.log();
     }
   },
   add: function(notes) {
