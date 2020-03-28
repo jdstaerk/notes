@@ -45,6 +45,17 @@ module.exports = {
     }
   
     writeNotesFile(notesJSON);
+  },
+  remove: function(noteIndex) {
+    if (!noteIndex || noteIndex <= 0) return;
+
+    var notesJSON = readNotesFile();
+
+    if (notesJSON && notesJSON.length > 0 && notesJSON[notesJSON.length - 1].date == TODAY) {
+      // noteIndex is not zero based. If noteIndex = 1, then remove the first item, not the second.
+      notesJSON[notesJSON.length - 1].notes.splice(noteIndex - 1, 1);
+      writeNotesFile(notesJSON);
+    }
   }
 }
 

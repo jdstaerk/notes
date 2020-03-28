@@ -13,6 +13,7 @@ export function cli() {
         console.log(usage);
         break;
       case 'remove':
+        cliFunctions.remove(options.remove)
         break;
       case 'today':
         cliFunctions.today();
@@ -23,5 +24,10 @@ export function cli() {
         cliFunctions.add(options.add);
         break;
     }
+  }
+
+  // Check if no args were supplied
+  if (Object.keys(options).length === 0 && options.constructor === Object) {
+    cliFunctions.today();
   }
 }
