@@ -9,13 +9,12 @@ const TODAY = format(new Date(), 'yyyy-MM-dd (MMMM, EEEE)');
 
 module.exports = {
   today: function() {
-    console.log('aeeeekjaöskdfj')
     var notesJSON = readNotesFile();
 
     if (notesJSON && notesJSON.length > 0 && notesJSON[notesJSON.length - 1].date == TODAY) {
       console.log(chalk.bold.black.bgGreen(' ' + TODAY + ' '));
       notesJSON[notesJSON.length - 1].notes.forEach(note => {
-        console.log('  \u2937 ' + note);
+        console.log('  > ' + note);
       });
     }
   },
