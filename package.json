@@ -21,6 +21,11 @@
     "todo",
     "simple"
   ],
+  "homepage": "https://github.com/jdstaerk/notes",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/jdstaerk/notes"
+  },
   "author": "Jan-David Stärk",
   "license": "ISC",
   "dependencies": {
