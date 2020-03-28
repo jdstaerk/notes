@@ -1,0 +1,33 @@
+{
+  "name": "@jdstaerk/notes",
+  "version": "1.0.0",
+  "description": "A CLI for simple note taking",
+  "main": "src/index.js",
+  "bin": {
+    "@jdstaerk/notes": "bin/notes",
+    "notes": "bin/notes"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "notes",
+    "note taking",
+    "tasks",
+    "todo",
+    "simple"
+  ],
+  "author": "Jan-David Stärk",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^6.1.0",
+    "date-fns": "^2.11.1",
+    "esm": "^3.2.25"
+  }
+}
