@@ -13,12 +13,13 @@ export function cli() {
         console.log(usage);
         break;
       case 'remove':
-        cliFunctions.remove(options.remove)
+        cliFunctions.remove(options.remove);
         break;
       case 'today':
         cliFunctions.today();
         break;
       case 'show':
+        cliFunctions.show(options.show);
         break;
       case 'add':
         cliFunctions.add(options.add);

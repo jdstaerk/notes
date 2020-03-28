@@ -29,9 +29,16 @@ module.exports.helpSections = [
         type: Boolean
       },
       {
+        name: 'show',
+        alias: 's',
+        description: 'Display your notes for the latest n days/entries.',
+        type: Number,
+        typeLabel: '{underline Number}'
+      },
+      {
         name: 'remove',
         alias: 'r',
-        description: 'Remove the entry of today specified by the number that you\'ll have to provide to this command.',
+        description: "Remove the entry of today specified by the number that you'll have to provide to this command.",
         type: Number,
         typeLabel: '{underline Number}'
       },
