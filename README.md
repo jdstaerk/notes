@@ -4,5 +4,6 @@ An easy to use tool to have notes on a daily basis. Use `npm install @jdstaerk/n
 ```
   -a, --add <note> <...>   Add a new note to today's notes.
   -t, --today          Display your notes for today.
+  -r, --remove         Remove the entry of today specified by the number that you'll have to provide to this command.
   -h, --help           Print this usage guide.
 ```
